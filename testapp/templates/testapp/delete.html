@@ -1,0 +1,8 @@
+{% extends "testapp/home.html" %}
+{% block content %}
+  <h1>Are you Sure ?</h1>
+  <form action="" method="POST">
+      {% csrf_token %}
+      <Button class="btn btn-danger" type="submit">Delete</Button>
+  </form>
+{% endblock content %}
